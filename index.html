@@ -1,0 +1,45 @@
+
+<html lang="en">
+
+<head>
+<title>Monitored data from Denmark Road</title>
+<link rel="stylesheet" type= "text/css" href="styles/global.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id = "header">
+		<div class = "logo"><a href ="#">Denmark Road Monitor</a></div>
+	</div>
+	<div id="container">
+		<div class="sidebar">
+			<ul id="nav">
+				<li><a class ="selected" href="index.html">Timeseries</a></li>
+				<li><a href="histograms.html">Histograms</a></li>
+				<li><a href="contour_plots.html">Contour Plots</a></li>
+				<li><a href="#">Empty</a></li>
+				<li><a href="#">Empty</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div id="box">
+				<div class="box-top">Humidity and Temperature over time - latest timeseries</div>
+				<div class="box-panel">
+					<iframe width=100% height="600" frameborder="0" scrolling="no" src="october.html"></iframe>
+				</div>
+			</div>
+			<div id="box">
+				<div class="box-top">Humidity and Temperature over time - past timeseries</div>
+				<div class="box-panel">
+					<iframe width=100% height="600" frameborder="0" scrolling="no" src="september.html"></iframe>
+					<iframe width=100% height="600" frameborder="0" scrolling="no" src="August.html"></iframe>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+
+</html>
