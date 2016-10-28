@@ -4,6 +4,7 @@
 <title>Monitored data from Denmark Road</title>
 <link rel="stylesheet" type= "text/css" href="styles/global.css" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+<script type="text/javascript" src="scripts/jquery.js"></script>
 
 </head>
 
@@ -15,10 +16,10 @@
 	<div id="container">
 		<div class="sidebar">
 			<ul id="nav">
-				<li><a href="index.html">Timeseries</a></li>
-				<li><a class ="selected" href="histograms.html">Histograms</a></li>
+				<li><a href="index.html">Current Conditions</a></li>
+				<li><a class ="selected" href="histograms.html">Historical Conditions</a></li>
 				<li><a href="contour_plots.html">Contour Plots</a></li>
-				<li><a href="#">Empty</a></li>
+				<li><a href="d3_page.html">D3 dashboard</a></li>
 				<li><a href="#">Empty</a></li>
 			</ul>
 		</div>
@@ -26,13 +27,19 @@
 			<div id="box">
 				<div class="box-top">Humidity and Temperature</div>
 				<div class="box-panel-left">
-					<iframe width=100% height="600" frameborder="0" scrolling="no" src="histogram_humidity.html"></iframe>
+					<iframe width=100% height="400" frameborder="0" scrolling="no" src="histogram_humidity.html"></iframe>
 				</div>
 				<div class="box-panel-right">
-					<iframe width=100% height="600" frameborder="0" scrolling="no" src="histogram_temperature.html"></iframe>
+					<iframe width=100% height="400" frameborder="0" scrolling="no" src="histogram_temperature.html"></iframe>
 				</div>
 			</div>
-			
+			<div id="box">
+				<div class="box-top">Humidity and Temperature over time - past timeseries</div>
+				<div class="box-panel">
+					<iframe width="1680"  height="400" frameborder="0" scrolling="no" src="september.html"></iframe>
+					<iframe width="1680"  height="400" frameborder="0" scrolling="no" src="August.html"></iframe>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

@@ -5,21 +5,26 @@
 <title>Monitored data from Denmark Road</title>
 <link rel="stylesheet" type= "text/css" href="styles/global.css" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="scripts/papaparse.js"></script>
 <script src="scripts/current_humidity.js"></script>
+
 </head>
 
 <body>
+
 	<div id = "header">
 		<div class = "logo"><a href ="#">Denmark Road Monitor</a></div>
 	</div>
 	<div id="container">
 		<div class="sidebar">
 			<ul id="nav">
-				<li><a class ="selected" href="index.html">Current Conditions</a></li>
+				<li><a href="index.html">Current Conditions</a></li>
 				<li><a href="histograms.html">Historical Conditions</a></li>
 				<li><a href="contour_plots.html">Contour Plots</a></li>
-				<li><a href="d3_page.html">D3 dashboard</a></li>
+				<li><a class ="selected" href="d3_page.html">D3 dashboard</a></li>
 				<li><a href="#">Empty</a></li>
 			</ul>
 		</div>
@@ -40,30 +45,11 @@
 					<div class="box-a1"><p id="outside-temp"></p></div>
 					<div class="box-a2"><img src="http://icons.wxug.com/i/c/k/cloudy.gif" alt="weather" /></div>
 			</div>
-			<div id="box">
-				<div class="box-top">Ventilation decision</div>
-					<div class="box-a3">Warmer Outside</div>
-					<div class="box-a4">More Humid Outside</div>
-					
-			</div>
-				
-				
-			<div id="box">
-				<div class="box-top">Humidity and Temperature over time - latest timeseries</div>
-				
-				<div class="box-panel">
-					<iframe width="1680" height="400" frameborder="0" scrolling="no" src="october.html"></iframe>
-				</div>
-			</div>
-			<div id="box">
-				<div class="box-top">Forecasted Conditions</div>
-				
-				<div class="box-panel">
-					<iframe width="1680" height="400" frameborder="0" scrolling="no" src="daily_forecast.html"></iframe>
-				</div>
-			</div>
 		</div>
+		
 	</div>
+	
+					
 </body>
 
 </html>
